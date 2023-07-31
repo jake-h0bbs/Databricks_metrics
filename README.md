@@ -1,11 +1,14 @@
-# SparkTaskMetrics
-Task Metrics Explorer - a tool that explode task internal metrics
+# Databricks Usage Metrics
+Quickly determine which workflows are inefficient & show clients how data optimization adds value & improves effienciency of their resources
 
 * Build: run `sbt package`
 
+- Query the internal workflow metrics as a table
+- Check Spark UI to find metrics for each task
+- Extract these details to a dataframe for analysis
 
-Sometimes it is useful to be able to query the job internal metrics as a table. Previously, we can check on Spark UI and then find out for each task, when did it launch, what is the duration, and what is the input size/ records for the task, etc. Now, you can use this package to extract this information to a DataFrame and query! For example:
 
+Example:
 ```scala
 import com.databricks.TaskMetricsExplorer
  
